@@ -48,7 +48,7 @@ cacheSolve <- function(x, ...) {
 	  return(inverse) 
       }
       
-    # if not, does x$get to get the matrix object, solves it and returns the solved result
+    # if not, does x$get to get the matrix object, solves it and returns the solved result.
 	data <- x$get()  
     inverse <- solve(data) 
     x$setInv(inverse)      
